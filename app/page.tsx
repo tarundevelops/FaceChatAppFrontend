@@ -4,7 +4,8 @@ import { useEffect, useRef } from "react";
 import io from "socket.io-client";
 
 // Use ngrok / LAN IP / Cloudflare Tunnel URL
-const socket = io("http://192.168.77.229:3001"); // Replace with your backend URL
+// const socket = io("http://192.168.77.229:3001"); // Replace with your backend URL
+const socket = io("https://facechatappbackend.onrender.com"); // Replace with your backend URL
 
 export default function Home() {
   const localVideo = useRef<any>(null);
